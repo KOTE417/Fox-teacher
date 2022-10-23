@@ -1,0 +1,15 @@
+body{
+    display: flex;
+    flex-direction: row;
+}
+.sidebar{
+    height: 100%;
+}
+.col{
+    margin-top: 60pt;
+}
+.book{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}

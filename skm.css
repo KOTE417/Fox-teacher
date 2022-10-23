@@ -1,0 +1,39 @@
+body, html
+{
+   width: 100%;
+   height: 100%;  
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   --main--bg-blue-light: #6A92D4;
+   --main--bg-blue-bg: #4479D4;
+   --main--bg-blue-dark: #1049A9;
+   --main--bg-grey: #e5eff7;
+   background: linear-gradient(-45deg, #4479D4, #e5eff7);
+   background-size: 500% 500%;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url("/fonts/Montserrat-Regular.ttf");
+ }
+ *{
+    font-family: Montserrat;}
+.skm{
+    min-width: 100%;
+    min-height: 450pt;
+    margin-top: 50pt;
+    background-color: var(--main--bg-blue-bg)
+}
+.skm__logo{
+    text-align: center;
+    color: white;
+    font-size: 4em;
+    font-weight: 500;
+}
+.skm__text{
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20pt;
+}
