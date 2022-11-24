@@ -1,0 +1,60 @@
+.game{
+    width: 520px;
+    height: 170px;
+    border: 1px solid black;
+    margin: auto;
+    background-image: url(/image/background.jpg);
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.character{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 60px;
+}
+.block{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 20px;
+    left: 480px;
+    animation: block 1.5s infinite linear;
+}
+@keyframes jump {
+    0% {top: 60px;}
+    30% {top: 0px}
+    70% {top: 0px;}
+    100% {top: 60px;}
+}
+@keyframes block {
+    0% {left: 540px;}
+    100% {left: -20px;}
+}
+.animate{
+    animation: jump 600ms linear;
+}
+.black{
+    background-color: black;
+}
+.error{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5pt;
+    width: 40%;
+    height: 20%;
+    margin: auto;
+    margin-top: 50px;
+}
+.error__text{
+    text-align: center;
+    font-size: 20pt;
+}
+.error__code{
+    font-size: 80pt;
+    text-align: center;
+    margin: 0px;
+}

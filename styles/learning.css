@@ -1,0 +1,124 @@
+body, html
+{
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   --main--bg-blue-light: #6A92D4;
+   --main--bg-blue-bg: #4479D4;
+   --main--bg-blue-dark: #1049A9;
+   --main--bg-grey: #e5eff7;
+   background: linear-gradient(-45deg, #4479D4, #e5eff7);
+   background-size: 500% 500%;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url("/fonts/Montserrat-Regular.ttf");
+ }
+*{
+    font-family: Montserrat;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 20pt;
+}
+.logo__title{
+    font-size: 4em;
+    font-weight: 900;
+    margin: auto 0 auto 0;
+    color: var(--main--bg-blue-bg);
+}
+.cours{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 20pt;
+    background-color:var(--main--bg-blue-bg);
+}
+.cours__card{
+    color: var(--main--bg-grey);
+    height: auto;
+    display:flex;
+    flex-direction: row;
+    margin-top: 20pt;
+    background-color: var(--main--bg-blue-dark);
+    transition: 0.5s ease;
+}
+.cours__card:last-child{
+    margin-bottom: 20pt;
+}
+.cours__card:hover{
+    color: black;
+    background-color: var(--main--bg-grey);
+    transition: 0.5s ease;
+}
+.cours__card-img{
+    max-width: 20%;
+    overflow: hidden;
+    position: relative;
+    margin: 0px;
+}
+.cours__card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    margin: 0px;
+}
+.cours__logo{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.cours__logo h1{
+    margin-left: 5%;
+    margin-right: auto;
+    margin-bottom: 10pt;
+}
+.cours__text{
+    margin-top: 0px;
+    margin-left: 5%;
+    font-size: 15pt;
+    word-wrap: break-word;
+}
+.cours__button{
+    width: 20%;
+    height: auto;
+    font-size: 20pt;
+    transition: 1s ease;
+    background-color: var(--main--bg-blue-light);
+    color: var(--main--bg-grey);
+    border: none;
+    cursor: pointer;
+}
+.cours__button:hover{
+    scale: 1.1;
+    transition: 1s ease;
+}
+@media (max-width:800px){
+    .cours__card{
+        flex-direction: column;
+    }
+    .cours__card-img{
+        opacity: 0;
+        height: 0px;
+        width: 0px;
+    }
+    .cours__logo{
+        margin: auto 0 auto 0;
+    }
+    .cours__button{
+        width: 100%;
+        height: 100pt;
+    }
+    .cours__logo{
+        width: 90%;
+        word-wrap: break-word;
+    }
+    .cours__logo h1{
+        width: 100%;
+        text-align: center;
+    }
+}

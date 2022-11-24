@@ -1,0 +1,137 @@
+body, html
+{  
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   --main--bg-blue-light: #6A92D4;
+   --main--bg-blue-bg: #4479D4;
+   --main--bg-blue-dark: #1049A9;
+   --main--bg-grey: #e5eff7;
+   ;
+}
+
+@font-face {
+   font-family: Montserrat;
+   src: url("/fonts/Montserrat-Regular.ttf");
+}
+*{
+   font-family: Montserrat;
+}
+ .about_projekt{
+   width: 80%;
+   height: auto;
+   box-sizing: border-box;
+   margin-top: 50pt;
+   margin-left: 10%;
+   box-shadow: 10px -16px var(--main--bg-blue-dark);
+   background-color: var(--main--bg-blue-bg);
+ }
+ .about_projekt h1{
+    color: white;
+    margin-left: 10%;
+ }
+ .about_projekt p{
+    width: 70%;
+    color: white;
+    font-size:16px;
+    font-weight: 500;
+    margin-left: 10%;
+    padding-bottom: 20px;
+ }
+ .team{
+   box-sizing: border-box;
+   width: 100%;
+   margin: auto 0 auto 0;
+   text-align: center;
+   color: var(--main--bg-blue-bg);
+}
+.team h1{
+   font-size: 40pt;
+}
+ .developers{
+   display: flex;
+   flex-direction: column;
+   box-sizing: border-box;
+   margin-left: 10%;
+   width: 80%;
+   height: auto;
+   background-color: var(--main--bg-blue-bg);
+   z-index: 1;
+ }
+ .line-card{
+   display: flex;
+   flex-direction: row;
+   margin-top: 5%;
+   margin-bottom: 5%;
+ }
+ .card:first-child{
+   margin-left: 2.5%;
+ }
+ .card{
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   color: white;
+   background-color: var(--main--bg-blue-dark);
+   width: 20%;
+   height: 300pt;
+   margin-left: 5%;
+   transition: 1s ease;
+ }
+ .card:hover{
+   transition: 0.1s ease;
+   scale: 1.2;
+ }
+ .card h1{
+   width: 80%;
+   font-size: 20pt;
+   word-wrap: break-word;
+   margin-left: 10%;
+ }
+ .card p{
+   margin-left: 5%;
+ }
+ .box {
+   max-width: 100%;
+   margin: 0px;
+   height: 50%;
+   overflow: hidden;
+   position: relative;
+}
+.box img {
+   width: 100%;
+   height: 100%;
+   object-fit:cover
+}
+
+@media (max-width: 800px){
+   .about_projekt p{
+      width: 90%;
+      word-wrap: break-word;
+   }
+   .line-card{
+      flex-direction: column;
+   }
+   .team{
+      width: 100%;
+      word-wrap: break-word;
+      margin: auto;
+   }
+   .team h1{
+      font-size: 20pt;
+   }
+   .developers{
+      width: 100%;
+      margin: auto;
+   }
+   .card:first-child{
+      margin: auto;
+   }
+   .card{
+      width: 80%;
+      margin: auto;
+      height: auto;
+      margin-bottom: 20pt;
+   }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="error.css">
+</head>
+<body>
+    <div class="game" onclick="jump()">
+        <div style="display: flex; flex-direction: row;">
+            <p>Score:</p>
+            <p class="score">0</p>
+        </div>
+        <div class="character"><img src="/android.svg"></div>
+        <div class="block"><img src="/apple.svg"></div>
+    </div>
+    <div class="error">
+        <p class="error__text">Не найдено</p>
+        <h1 class="error__code">404</h1>
+        <p class="error__text">Ресур по данному адресу недоступен</p>
+    </div>
+    <script src="error.js"></script>
+</body>
+</html>

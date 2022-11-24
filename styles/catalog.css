@@ -1,0 +1,94 @@
+body, html
+{
+    width: 100%;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   --main--bg-blue-light: #6A92D4;
+   --main--bg-blue-bg: #4479D4;
+   --main--bg-blue-dark: #1049A9;
+   --main--bg-grey: #e5eff7;
+   background: linear-gradient(-45deg, #4479D4, #e5eff7);
+   background-size: 500% 500%;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url("/fonts/Montserrat-Regular.ttf");
+ }
+*{
+    font-family: Montserrat;
+}
+
+.about{
+    width: 100%;
+    height: auto;
+    margin-top: 20pt;
+    background-color: var(--main--bg-blue-light);
+}
+.about__title{
+    width: 100%;
+    color: var(--main--bg-grey);
+    font-size: 35pt;
+    text-align: center;
+    word-wrap: break-word;
+}
+.about__text{
+    width: 80%;
+    font-size: 20pt;
+    color: var(--main--bg-grey);
+    margin-left: 10%;
+    word-wrap: break-word;
+}
+.component{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20pt;
+}
+.component__piece{
+    width: 40%;
+    color: var(--main--bg-grey);
+    font-size: 20pt;
+    margin-left: 5%;
+    word-wrap: break-word;
+}
+.component__image{
+    width: 50%;
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.component__image img{
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 800px){
+    .about{
+        width: 100%;
+    }
+    .about__title{
+        font-size: 20pt;
+    }
+    .about__text{
+        margin: auto;
+        text-align: center;
+        font-size: 15pt;
+    }
+    .component{
+        flex-direction: column;
+    }
+    .component__piece{
+        width: 99%;
+        margin-left: 1%;
+        word-wrap: break-word;
+        font-size: 12pt;
+    }
+    .component__piece p, ul, li{
+        word-wrap: break-word;
+    }
+    .component__image{
+        width: 100%;
+    }
+}
